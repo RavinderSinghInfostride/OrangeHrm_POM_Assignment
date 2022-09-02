@@ -19,6 +19,7 @@ public class AdminPage {
         driver.findElement(addButton).click();
     }
 
+    // To verify user was added successfully
     public void searchEmployee() {
         driver.findElement(userRoleDropdown).click();
         driver.findElement(By.xpath("//*[contains(text(),'Admin')]")).click();
