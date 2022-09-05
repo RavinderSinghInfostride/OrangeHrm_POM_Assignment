@@ -7,7 +7,6 @@ public class PageFactory {
     private LoginPage loginPage;
     private PimPage pimPage;
     private AdminPage adminPage;
-    private AddUserPage addUserPage;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -32,12 +31,5 @@ public class PageFactory {
             adminPage = new AdminPage(driver);
         }
         return adminPage;
-    }
-
-    public AddUserPage getAddUserPage() {
-        if (addUserPage == null) {
-            addUserPage = new AddUserPage(driver);
-        }
-        return addUserPage;
     }
 }

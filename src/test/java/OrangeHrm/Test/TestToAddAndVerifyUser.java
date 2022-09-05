@@ -9,9 +9,9 @@ public class TestToAddAndVerifyUser extends BaseClass{
         verification("//h6[1]","Admin");
         pageFactory.getAdminPage().clickAddButton();
         verification("(//h6)[2]","Add User");
-        pageFactory.getAddUserPage().AddUser();
+        pageFactory.getAdminPage().AddUser();
         verification("//h6[1]","Admin");
-        pageFactory.getAdminPage().searchEmployee();  //To verify user was added successfully
+        pageFactory.getAdminPage().verifyAddedUser();
         close();
     }
 }
